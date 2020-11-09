@@ -1,0 +1,35 @@
+@keyframes color {
+    0% {
+        background-image: url("../../../assets/img/1.jpg")
+    }
+    25% {}
+    50% {}
+    75% {
+        background-image: url("../../../assets/img/3.jpg");
+    }
+    100% {
+        background-image: url("../../../assets/img/4.jpg");
+    }
+}
+
+@keyframes example {
+    0% {
+        top: 110%;
+        right: 5%;
+        color: chartreuse;
+    }
+    25% {
+        color: rgb(129, 209, 49);
+    }
+    50% {
+        color: rgb(134, 204, 63);
+    }
+    75% {
+        color: rgb(123, 165, 80);
+    }
+    100% {
+        top: 20%;
+        right: 5%;
+        color: thistle;
+    }
+}

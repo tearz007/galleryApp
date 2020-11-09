@@ -1,0 +1,71 @@
+<div class="main">
+    <div class="container">
+        <div class="nev">
+            <div class="Logo">
+                <span class="sp2">Gallery</span>
+            </div>
+        </div>
+        <div class="collection">
+            <div class="product_list" *ngFor="let items of collect">
+                <div class="img">
+                    <img [src]="items.image">
+                    <!-- <h2>{{items.name}}</h2> -->
+                    <button (click)="clicked(items.id)" mat-raised-button>View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+
+    <!-- <div class="type">
+        <div>
+            <button mat-raised-button>
+        <mat-icon color="primary">perm_media</mat-icon>
+      </button>
+            <br />
+            <span>Browser</span>
+        </div>
+    </div> -->
+    <div class="type">
+        <div>
+            <button mat-raised-button>
+        <mat-icon color="primary">movie</mat-icon>
+      </button>
+            <br />
+            <span>Video</span>
+        </div>
+    </div>
+
+    <div class="type selected">
+        <div>
+            <button mat-raised-button>
+        <mat-icon color="worn">insert_photo</mat-icon>
+      </button>
+            <br />
+            <span>picture</span>
+        </div>
+    </div>
+
+    <div class="type last">
+        <div>
+            <button mat-raised-button>
+        <mat-icon color="primary">favorite</mat-icon>
+      </button>
+            <br />
+            <span>Favorite</span>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- <mat-grid-list cols="2">
+                     <mat-grid-tile class="mat" (click)="clicked()"><img src="../../../assets/img/1.jpg"></mat-grid-tile>
+                    <mat-grid-tile class="mat"><img src="../../../assets/img/1.jpg"> </mat-grid-tile>
+                    <mat-grid-tile class="mat"><img src="../../../assets/img/1.jpg"></mat-grid-tile>
+                    <mat-grid-tile class="mat"><img src="../../../assets/img/2.jpg"></mat-grid-tile>
+                    <mat-grid-tile class="mat"><img src="../../../assets/img/2.jpg"> </mat-grid-tile>
+                    <mat-grid-tile class="mat"><img src="../../../assets/img/2.jpg"></mat-grid-tile>
+                </mat-grid-list> -->

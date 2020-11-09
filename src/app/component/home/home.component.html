@@ -1,0 +1,42 @@
+<div class="main">
+    <div class="container">
+        <div class="nev">
+            <div class="Logo">
+                <!-- <span class="sp1">.</span> -->
+                <span class="sp2">Phina</span>
+            </div>
+            <div class="nevBtn">
+                <span (click)="activate()" style="cursor: pointer">
+          <mat-icon color="accent">menu</mat-icon>
+        </span>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu_container">
+                <div class="{{ active }} text ">
+                    <div class="great">Hello</div>
+                    <div class="name">Phina Here</div>
+
+                    <div class="btn">
+                        <button (click)='gotoApp()' mat-raised-button>See More</button>
+                    </div>
+                </div>
+                <div class="sticky {{ active }}">
+                    <div class="sidebar {{ active }}">
+                        <div class="cancel_btn" (click)="de_activate()">
+                            <button>X</button>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li>Home</li>
+                                <li (click)='gotoApp()'>Gallery</li>
+                                <li>About</li>
+                                <li>contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
